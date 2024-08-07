@@ -12,7 +12,7 @@ const app = express();
 
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://book-review-app-mu.vercel.app/', 
+  'https://book-review-app-mu.vercel.app', 
 ];
 
 app.use(cors({

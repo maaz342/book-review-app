@@ -4,7 +4,7 @@ import {authMiddleware} from '../middleware/middleware';
 import { getReviewsForUser } from '../controllers/reviewController';
 const router = express.Router();
 
-router.post('/register',authMiddleware, registerUser);
+router.post('/register', registerUser);
 router.post('/login', loginUser);
 router.get('/profile',authMiddleware, getProfile);
 router.put('/profile',authMiddleware,updateProfile );
